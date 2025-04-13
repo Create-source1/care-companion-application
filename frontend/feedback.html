@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback - Care Companion</title>
+  <link rel="stylesheet" href="./css files/feedback.css" />
+</head>
+<body>
+  <div id="feedback-container">
+    <h2>We Value Your Feedback 🐾</h2>
+
+    <form id="feedback-form">
+      <!-- Sender Details -->
+      <div class="input-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email used to login" required />
+      </div>
+
+      <!-- Message Box -->
+      <div class="input-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your feedback here..." required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit-feedback" class="submit-btn">Submit Feedback</button>
+    </form>
+
+    <div class="footer">
+      <p>Contact: <a href="mailto:developer@care-companion.com">developer@care-companion.com</a></p>
+    </div>
+
+    <!-- Back to Dashboard Button -->
+    <button onclick="location.href='dashboard.html'" class="back-btn">← Back to Dashboard</button>
+  </div>
+
+  <script type="module" src="./javascript files/feedback.js"></script>
+</body>
+</html>

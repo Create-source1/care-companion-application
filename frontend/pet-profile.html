@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Pet Profile - Care Companion</title>
+  <link rel="stylesheet" href="./css files/pet-profile.css">
+  <script type="module" src="./javascript files/pet-profile.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create Your Pet's Profile</h2>
+    
+    <input type="text" id="pet-name" placeholder="Pet Name" required>
+    <input type="text" id="pet-breed" placeholder="Breed" required>
+    <input type="number" id="pet-age" placeholder="Age (in years)" required>
+    <input type="text" id="pet-weight" placeholder="Weight (e.g. 25 kg)" required>
+    <input type="url" id="pet-photo-url" placeholder="Photo URL (optional)">
+    <label for="pet-photo-upload" style="margin-top: 10px;">Or upload a photo:</label>
+    <input type="file" id="pet-photo-upload" accept="image/*">
+    
+    <button id="savePetBtn">Save Profile</button>
+    <p id="error-message"></p>
+  </div>
+</body>
+</html>

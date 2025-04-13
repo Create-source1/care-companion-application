@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Care Companion</title>
+  <link rel="stylesheet" href="./css files/dashboard.css">
+</head>
+<body>
+  <div id="loading" class="loading-message">Fetching profile...</div>
+
+<div id="dashboard-content" class="dashboard-container" style="display: none;">
+  <button id="logoutBtn" class="logout-btn">Logout</button>
+  <h2 id="greeting">Welcome!</h2>
+
+  <section class="pet-profile-summary">
+    <img id="pet-photo" src="" alt="Pet Photo">
+    <div>
+      <h3 id="pet-name">Your Pet</h3>
+      <p id="pet-details">Breed · Age · Weight</p>
+    </div>
+  </section>
+
+  <!-- New Carousel Section -->
+<section class="pet-carousel-section">
+  <h3>Your Pets 🐶🐱</h3>
+  <div class="pet-carousel" id="petCardsContainer">
+    <!-- JS will inject cards here -->
+  </div>
+  <button id="create-more-pets" style="display: none;" onclick="location.href='pet-profile.html'">Add More Pets ➕</button>
+</section>
+
+  <section class="quick-actions">
+    <button onclick="location.href='activity.html'">Log Activity 🐾</button>
+    <button onclick="location.href='vet-appointments.html'">Vet Appointments 🩺</button>
+    <button onclick="location.href='health.html'">Health Records 📊</button>
+    <button onclick="location.href='feedback.html'">Feedback ✅</button>
+  </section>
+</div>
+
+
+  <script src="./javascript files/auth.js" type="module"></script>
+  <script src="./javascript files/dashboard.js" type="module"></script>
+</body>
+</html>

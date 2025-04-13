@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Health - Care Companion</title>
+    <link rel="stylesheet" href="./css files/health.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="health-container">
+        <h2>📒 Health Journal</h2>
+
+        <form id="health-journal-form">
+          <label for="entry-type">Type:</label>
+          <select id="entry-type" required>
+            <option value="">Select Type</option>
+            <option value="Symptom">Symptom</option>
+            <option value="Vet Visit">Vet Visit</option>
+            <option value="Prescription">Prescription</option>
+            <option value="Treatment">Treatment</option>
+          </select>
+        
+          <label for="entry-date">Date:</label>
+          <input type="date" id="entry-date" required>
+        
+          <label for="entry-description">Description:</label>
+          <textarea id="entry-description" required placeholder="Describe symptoms, vet notes, meds, etc..." rows="5"></textarea>
+        
+          <!-- <label for="entry-notes">Notes:</label>
+          <textarea id="entry-notes"></textarea> -->
+        
+          <label for="vet-name">Vet Name (optional):</label>
+          <input type="text" id="vet-name">
+        
+          <label for="medications">Medications (comma-separated, optional):</label>
+          <input type="text" id="medications">
+
+          <label for="entry-image">Upload Image (optional):</label>
+          <input type="file" id="entry-image" accept="image/*">
+
+        
+          <label for="next-visit">Next Visit (optional):</label>
+          <input type="date" id="next-visit">
+        
+          <button type="submit">Add Entry</button>
+        </form>
+        
+        <hr>
+        
+       
+        <div class="filter-header">
+            <h3>📋 Logged Entries</h3>
+            <div class="filter-control">
+              <label for="filter-type">Filter by Type:</label>
+              <select id="filter-type">
+                <option value="">All</option>
+                <option value="Symptom">Symptom</option>
+                <option value="Vet Visit">Vet Visit</option>
+                <option value="Prescription">Prescription</option>
+                <option value="Treatment">Treatment</option>
+              </select>
+            </div>
+          </div>
+          
+          
+        <ul id="health-journal-list"></ul>
+
+                                         <!-- Weight Tracker -->
+        <hr>
+
+        <div id="weight-tracker-section">
+          <h2>⚖️ Weight Tracker</h2>
+        
+          <form id="weight-form">
+            <label for="weight-date">Date:</label>
+            <input type="date" id="weight-date" required>
+        
+            <label for="pet-weight">Weight (kg):</label>
+            <input type="number" id="pet-weight" step="0.01" min="0" required>
+        
+            <button type="submit">Add Weight</button>
+          </form>
+        
+          <h3>📈 Weight Logs</h3>
+          <ul id="weight-log-list"></ul>
+
+          <h3>📈 Weight Trend</h3>
+          <canvas id="weight-chart" style="max-width: 100%; height: 300px;"></canvas>
+
+        
+          <!-- <canvas id="weight-chart" width="400" height="200"></canvas> -->
+        
+          <div id="weight-recommendation" class="recommendation-box"></div>
+        </div>
+        
+        
+        <button onclick="location.href='dashboard.html'" class="back-btn">← Back to Dashboard</button>
+    </div>
+
+<script type="module" src="./javascript files/health.js"></script>
+</body>
+</html>

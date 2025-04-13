@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vet Appointments - Care Companion</title>
+  <link rel="stylesheet" href="./css files/vet.css" />
+
+  <!-- Load Google Maps API asynchronously with callback -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsf_x1sb7k9lR8n2JFHZBXKP2zh-PfxfY&libraries=places&callback=initMap"
+    async defer></script>
+</head>
+<body>
+  <div id="vet-container">
+    <h2>Find a Nearby Vet 🩺</h2>
+
+    <!-- 📍 Location Input -->
+    <div class="location-search">
+      <label for="address-input">Enter your location:</label>
+      <input type="text" id="address-input" placeholder="e.g. New York, NY or 90210" />
+      <button id="search-button">Search Vets</button>
+    </div>
+
+    <!-- 🗺️ Google Map -->
+    <div id="map" style="height: 400px; border-radius: 12px; margin: 20px 0;"></div>
+
+    <!-- 🏥 Vet Results -->
+    <div id="vet-results" class="vet-results-list">
+      <p>Enter a location and click search to see nearby vets.</p>
+    </div>
+
+    <!-- 🔙 Back -->
+    <button onclick="location.href='dashboard.html'" class="back-btn">← Back to Dashboard</button>
+  </div>
+
+  <!-- JS Logic -->
+  <script type="module" src="./javascript files/vet.js"></script>
+</body>
+</html>

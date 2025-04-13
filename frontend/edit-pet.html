@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Pet Profile - Care Companion</title>
+  <link rel="stylesheet" href="./css files/edit-pet.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Edit Your Pet's Profile</h2>
+
+    <!-- Pet name -->
+    <input type="text" id="pet-name" placeholder="Pet Name" required>
+
+    <!-- Pet breed -->
+    <input type="text" id="pet-breed" placeholder="Breed" required>
+
+    <!-- Pet age -->
+    <input type="number" id="pet-age" placeholder="Age (in years)" required>
+
+    <!-- Pet weight -->
+    <input type="text" id="pet-weight" placeholder="Weight (e.g. 25 kg)" required>
+
+    <!-- Pet photo URL -->
+    <input type="url" id="pet-photo-url" placeholder="Photo URL (optional)">
+
+    <label for="pet-photo-upload">Or upload a new photo:</label>
+    <input type="file" id="pet-photo-upload" accept="image/*">
+
+    <!-- Save and Cancel buttons -->
+    <button id="savePetBtn">Save Changes</button>
+    <button id="cancelBtn" onclick="location.href='dashboard.html'">Cancel</button>
+
+    <p id="error-message"></p>
+  </div>
+
+  <script src="./javascript files/edit-pet.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Activities - Care Companion</title>
+  <link rel="stylesheet" href="./css files/activity.css">
+</head>
+<body>
+  <div class="activity-container">
+    <h2>🐾 Activity Tracker</h2>
+    <p>Log and monitor your pet's daily activities</p>
+
+    <form id="activity-form">
+      <select id="activity-type" required>
+        <option value="">-- Select Activity --</option>
+        <option value="Walk">Walk</option>
+        <option value="Feeding">Feeding</option>
+        <option value="Medication">Medication</option>
+        <option value="Playtime">Playtime</option>
+      </select>
+
+      <input type="datetime-local" id="activity-time" required>
+      <input type="text" id="activity-notes" placeholder="Notes (optional)">
+
+          <!-- Reminder -->
+    <label>
+        <input type="checkbox" id="set-reminder">
+        ⏰ Set Reminder for this activity
+      </label>
+      
+      <input type="datetime-local" id="reminder-time" style="display: none;">
+
+      <button type="submit">Log Activity</button>
+    </form>
+
+
+      
+    <div class="filter-header">
+        <h3>📋 Logged Activities</h3>
+        <select id="filter-type">
+          <option value="all">All Activities</option>
+          <option value="Walk">Walk</option>
+          <option value="Feeding">Feeding</option>
+          <option value="Medication">Medication</option>
+          <option value="Playtime">Playtime</option>
+        </select>
+      </div>
+      
+      
+
+    <ul id="activity-list"></ul>
+
+    <div class="reminder-section">
+        <h3>⏰ Upcoming Reminders</h3>
+        <ul id="reminder-list"></ul>
+      </div>
+      
+
+    <button onclick="location.href='dashboard.html'" class="back-btn">← Back to Dashboard</button>
+  </div>
+
+  <script src="./javascript files/activity.js" type="module"></script>
+</body>
+</html>

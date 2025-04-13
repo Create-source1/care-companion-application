@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fffaf5, #e6f7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+/* Basic styling for form container */
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="number"],
+  input[type="url"],
+  input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #70b5ff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #559de0;
+  }
+  
+  /* Cancel button */
+  #cancelBtn {
+    background-color: #ff7070;
+    margin-top: 0.5rem;
+  }
+  
+  #cancelBtn:hover {
+    background-color: #e55e5e;
+  }
+  
+  /* Error message */
+  #error-message {
+    color: green;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  

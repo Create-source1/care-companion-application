@@ -1,0 +1,85 @@
+/* Feedback Page Styles */
+#feedback-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+  }
+  
+  h2 {
+    color: #4e8cff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .input-group textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    background-color: #4e8cff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #3b7acc;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #555;
+  }
+  
+  .footer a {
+    color: #4e8cff;
+    text-decoration: none;
+  }
+  
+  .back-btn {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid #4e8cff;
+    color: #4e8cff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+  }
+  
+  .back-btn:hover {
+    background-color: #4e8cff;
+    color: #fff;
+  }
+  

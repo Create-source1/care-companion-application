@@ -1,0 +1,70 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fffaf5, #e6f7ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 1.5rem;
+    color: #3a3a3a;
+    font-size: 1.8rem;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="number"],
+  .form-container input[type="url"],
+  .form-container input[type="file"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #f4f8fb;
+  }
+  
+  .form-container label {
+    font-size: 0.9rem;
+    color: #666;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #70b5ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #559de0;
+  }
+  
+  #error-message {
+    color: #d9534f;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+  
