@@ -1,6 +1,5 @@
-# Project Title
-**Care Companion 🐾**
-— a beautifully designed pet care application that helps users manage pet profiles, track activities and health, find nearby veterinary services, and provide feedback — all in one place.
+# **Care Companion 🐾**
+A beautifully designed pet care application that helps users manage pet profiles, track activities and health, find nearby veterinary services, and provide feedback — all in one place.
 
 ## Introduction
 **Care Companion** is a user-friendly web application designed to support pet owners in managing their pet's well-being with ease and confidence. The primary purpose of the project is to centralize all aspects of pet care — from health tracking to daily activities, veterinary needs, and feedback — into one seamless experience.
@@ -15,15 +14,9 @@ At its core, **Care Companion** allows users to:
 
 By organizing all pet care needs in a single place, **Care Companion** saves time, reduces stress, and ensures every furry friend receives the best possible care.
 
-## Project Type
-Fullstack
-
-## Deplolyed App--------------
-Frontend: https://deployed-site.whatever
-Backend: https://deployed-site.whatever
-Database: https://deployed-site.whatever
 
 ## Directory Structure
+```
 my-app/
 ├─ backend/
 │  ├─ firebase-config.js
@@ -64,13 +57,7 @@ my-app/
 │  │  ├─ images/
 │  │  ├─ icons/
 ├─ README.md
-
-
-## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
-
-## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+```
 
 ## Features
 1. User Authentication: Secure signup, login, and password recovery.
@@ -83,7 +70,7 @@ Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 8. User-Friendly Interface: Aesthetic, responsive design with intuitive navigation.
 9. Firebase Integration: Secure storage and real-time updates of pet and user data.
 
-## design decisions or assumptions
+## Design Decisions
 1. Responsive Design: Mobile-first approach using Flexbox and CSS Grid for a seamless experience across devices.
 2. User-Centered Interface: Clean, intuitive design with soft, welcoming colors.
 3. Firebase Backend: Firebase for real-time data syncing, user authentication, and Firestore for structured pet data storage.
@@ -95,26 +82,14 @@ Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 9. Error Handling: Alerts and messages for success or failure.
 10. Emojis: Used to make the app feel friendly and engaging.
 
-## Installation & Getting started-----------
-Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
+## Installation & Getting started
 
 ```bash
-npm install my-project
+clone 
 cd my-project
-npm start
+npm install
+npm run dev
 ```
-
-## Usage----------
-Provide instructions and examples on how to use your project.
-
-```bash
-# Example
-```
-
-Include screenshots as necessary.
-
-## Credentials------------
-Provide user credentials for autheticated pages
 
 ## APIs Used
 - <u>Google Maps API</u>: Used for the Vet Locator feature to find nearby emergency veterinary services.
@@ -135,3 +110,5 @@ Here’s a list and brief overview of the technologies used in the **Care Compan
 - <u>Chart.js Library</u>: Utilized in the Health Tracker to display pet weight trends through interactive line charts.
 
 - <u>Google Maps API</u>: Integrated for the Vet Locator feature to find nearby veterinary clinics with contact info and directions.
+
+## Author: Pooja Jaiswal
