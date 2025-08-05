@@ -85,7 +85,7 @@ my-app/
 ## Installation & Getting started
 
 ```bash
-clone 
+git clone https://github.com/your-username/project-name.git
 cd my-project
 npm install
 npm run dev
